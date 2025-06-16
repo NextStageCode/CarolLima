@@ -1,4 +1,4 @@
-const mainMenu = document.querySelector(".mainMenu")
+const mainMenu = document.querySelector("#container")
 const tabelaMenu = document.querySelector(".tabelaMenu")
 
 const tabelaPreco = document.querySelector("#tabelaPreco")

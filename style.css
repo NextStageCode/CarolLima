@@ -62,6 +62,16 @@ body * {
   */
 }
 
+#sobreContainer {
+  width: 100%;
+  max-width: 588px;
+  margin: auto;
+  padding: 0 24px; /*em cima e em baixo 0px e nas laterais 24px*/
+  margin-top: 10px; /* ou  padding-top: 56px;nesse caso!*/
+
+
+}
+
 /*profile*/
 #profile {
   display: flex;
@@ -72,6 +82,13 @@ body * {
 
 #profile .LogoBolo {
   width: 170px;
+}
+
+#profile .FotoCarol {
+  width: 170px;
+  border-radius: 100%;
+  border: 3px solid #713630;
+  margin-bottom: 5px;
 }
 
 #profile .h1profile h1 {
@@ -149,7 +166,7 @@ ul li a:hover {
   display: flex;
   justify-content: center;
 
-  padding: 24px 0;
+  padding: 10px 0;
 
   font-size: 24px;
 }
@@ -174,6 +191,7 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+
 }
 
 .hide{
@@ -192,6 +210,20 @@ footer {
     --bg-url: url(./assets/bg-desktop-light.jpg);
   }
 }
+
+.animar-entrada {
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: descerEFicarVisivel 1s ease-out forwards;
+
+    }
+
+    @keyframes descerEFicarVisivel {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
 /* animation */
 @keyframes slide-in {
